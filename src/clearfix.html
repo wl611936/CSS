@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box{
+      background-color: #ccc;
+      float: left;
+      width: calc(100% / 3);
+    }
+    .container{
+      background-color: #69c;
+      margin: auto;
+      width: 960px;
+    }
+    .clearfix::after{
+      clear: both;
+      content: "";
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="container clearfix">
+    <div class="box">
+      <h2>headline1</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam aperiam hic dolore. Odio explicabo quisquam minima!
+      </p>
+    </div>
+    <div class="box">
+      <h2>標題2</h2>
+      <p>
+        市政府最為公共適用小姐書記合同一隻感情翻譯，不行翻譯收集高興此外平方米管理系統直播主，刺激經典職業，人才引擎制定輕輕，根據也可。Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi vero quam unde deserunt consequuntur corporis quisquam at ad. Accusantium, nemo rem. Voluptatibus beatae praesentium optio nihil? 
+      </p>
+    </div>
+    <div class="box">
+      <h2>headline3</h2>
+      <p>
+        Accusantium. Nemo repellat ex id. Molestias dolorum officiis deleniti architecto laudantium itaque reprehenderit quo modi eveniet impedit debitis illo aperiam cum quis excepturi, omnis dolore nisi quae minus. Repellendus, deleniti sint?
+      </p>
+    </div>
+  </div>
+</body>
+</html>
