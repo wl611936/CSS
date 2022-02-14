@@ -5,8 +5,48 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <style>
+    *{
+      box-sizing: border-box;
+    }
+    .container{
+      background-color: #999;
+      font-size: 0;
+      height: 300px;
+      width: 600px;
+    }
+    .container::before{
+      content: "";
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+    }
+    .content{
+      display: inline-block;
+      font-size: 16px;
+      padding: 0 16px;
+      vertical-align: middle;
+      width: 400px;
+    }
+    .picture{
+      display: inline-block;
+      height: 200px;
+      vertical-align: middle;
+      width: 200px;
+    }
+  </style>
 </head>
 <body>
-  
+  <div class="container">
+    <div class="picture">
+      <img src="https://via.placeholder.com/200/ccc?text=200x200">
+    </div>
+    <div class="content">
+      <h2>title</h2>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet modi, aspernatur quas temporibus fugiat odio nobis molestias distinctio accusantium magni consectetur omnis minima officia eaque vitae magnam iure id consequatur voluptatem? Minima?
+      </p>
+    </div>
+  </div>
 </body>
 </html>
