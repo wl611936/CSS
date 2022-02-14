@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  .container{
+    background-color: #c90;
+    height: 240px;
+    text-align: center;
+    width: 320px;
+  }
+  .container::before{
+    display: inline-block;
+    content: "";
+    height: 100%;
+    vertical-align: middle;
+  }
+  .box{
+    display: inline-block;
+    vertical-align: middle;
+  }
+</style>
+<body>
+  <div class="container">
+    <div class="box">
+      Lorem consectetur ipsum
+      <br>
+      dolorit amet
+    </div>
+  </div>
+</body>
+</html>
