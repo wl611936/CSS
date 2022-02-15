@@ -1,10 +1,14 @@
 /* GLOBAL */
 :root{
-  --primaryColor: #f30;
+  --primaryColor: #333;
 }
 *{
   box-sizing: border-box;
   font-family: "Microsoft Jhanghei";
+}
+a{
+  color: var(--primaryColor);
+  text-decoration: none;
 }
 body, h1, h2, h3, h4, h5, h6, html, img, li, ol, p, ul{
   border: 0;
@@ -17,6 +21,15 @@ div{
 img{
   vertical-align: top;
   width: 100%;
+}
+li{
+  list-style: none;
+}
+.btn{
+  background-color: var(--primaryColor);
+  color: #ccc;
+  display: inline-block;
+  padding: 8px 16px;
 }
 .clearfix::after{
   clear: both;
@@ -74,4 +87,25 @@ img{
 }
 .no-padding{
   padding: 0!important;
+}
+#nav-info{
+  background-color: #ccc;
+  padding: 16px 0;
+}
+#nav-info a{
+  display: block;
+  padding: 8px 16px;
+}
+#nav-info .addr{
+  float: left;
+  padding: 8px 16px;
+}
+#nav-info .register{
+  float: right;
+}
+#nav-info .register li{
+  float: left;
+}
+#nav-info .donate{
+  float: right;
 }
