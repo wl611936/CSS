@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      box-sizing: border-box;
+    }
+    /* [class*="col"]{} 有包含 col */
+    /* [class^="col"]{} 開頭有 col */
+    /* [class$="col"]{} 結尾有 col */
+    [class^="col"]{
+      background-color: #393;
+      float: left;
+      padding: 0 16px;
+    }
+    .col-1{
+      width: calc(100% / 12 * 1);
+    }
+    .col-2{
+      width: calc(100% / 12 * 2);
+    }
+    .col-3{
+      width: calc(100% / 12 * 3);
+    }
+    .col-4{
+      width: calc(100% / 12 * 4);
+    }
+    .col-5{
+      width: calc(100% / 12 * 5);
+    }
+    .col-6{
+      width: calc(100% / 12 * 6);
+    }
+    .col-7{
+      width: calc(100% / 12 * 7);
+    }
+    .col-8{
+      width: calc(100% / 12 * 8);
+    }
+    .col-9{
+      width: calc(100% / 12 * 9);
+    }
+    .col-10{
+      width: calc(100% / 12 * 10);
+    }
+    .col-11{
+      width: calc(100% / 12 * 11);
+    }
+    .col-12{
+      width: calc(100% / 12 * 12);
+    }
+    .fixed-width{
+      background-color: #fc0;
+      margin: auto;
+      overflow: auto;
+      width: 960px;
+    }
+    .full-width{
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="full-width">
+    <div class="fixed-width">
+      <div class="col-4">
+        <h2>headline</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda unde quis necessitatibus aperiam eaque excepturi exercitationem dolorum facilis.
+        </p>
+      </div>
+      <div class="col-4">
+        <h2>headline</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, quia architecto, itaque esse quasi incidunt numquam eius, sequi repellendus dolorum animi nulla. Quidem, laudantium?
+        </p>
+      </div>
+      <div class="col-4">
+        <h2>headline</h2>
+        <p>
+          Ametetur adipisicing elit. Assumenda unde quis necessitatibus aperiam eaque excepturi exercitationem dolorum.
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
