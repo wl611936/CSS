@@ -18,12 +18,38 @@ body, h1, h2, h3, h4, h5, h6, html, img, li, ol, p, ul{
 div{
   color: var(--primaryColor);
 }
+header{
+  background-attachment: fixed;
+  background-image: url(https://picsum.photos/id/33/1920/1080);
+  background-position: center;
+  background-size: cover;
+  height: 540px;
+}
 img{
   vertical-align: top;
   width: 100%;
 }
 li{
   list-style: none;
+}
+nav{
+  background-color: rgba(255, 255, 255, .6);
+  padding: 16px 0;
+  position: absolute;
+  top: 80.8px;
+}
+nav a{
+  display: block;
+  padding: 8px 16px;
+}
+nav .logo{
+  float: left;
+}
+nav .menu{
+  float: right;
+}
+nav .menu li{
+  float: left;
 }
 .btn{
   background-color: var(--primaryColor);
@@ -89,7 +115,8 @@ li{
   padding: 0!important;
 }
 #nav-info{
-  background-color: #ccc;
+  background-color: rgba(255, 255, 255, .6);
+  position: absolute;
   padding: 16px 0;
 }
 #nav-info a{
